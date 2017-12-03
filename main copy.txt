@@ -1,0 +1,91 @@
+#include "Fila.h"
+#include "PilhaCaixa.h"
+#include <stdio.h>
+
+#ifndef INCLUDE_STDLIB
+#define INCLUDE_STDLIB
+#include <stdlib.h>
+#endif
+
+#include <math.h>
+
+int main () {
+	//struct Fila *fi = NULL;	
+        //int caixas = 1, clientes = 1;
+
+        printf("Digite algum número\n");
+
+	return(0;
+}
+
+/*
+        scanf("%d", &caixas);
+	printf("%d", caixas);
+
+
+
+	struct PilhaCaixa *pi[caixas];
+
+	for (int z = 0; z < caixas; z++) {
+		criarPilha(pi[z]);     // Vetor de pilhas, já que serão necessárias várias. 
+							// cada pilha = um caixa.
+	}
+
+	//int contador, z = 0;
+
+	criarFila(fi, (int) sqrt(clientes)); // fila de capacidade floor(raiz(N))
+
+	//int clientesPorCaixa = clientes/caixas;
+
+	
+	for (int i=1; i <= clientes; i++){
+		if (!filaEstaCheia(fi)) {
+			//pcl = &cl;         // Se preenche a fila. Após isso, envia a fila para
+                         
+								// as pilhas subsequentes. Desempilha, e faz o processo até 
+								// registrar todos os clientes.
+			struct Operacao op;
+			scanf ("%d %d %d", &op.codigoCliente, &op.operacao, &op.valor);
+			inserirNaFila(fi, &op);
+		} else{
+			Cliente cl2;
+			Cliente* clz;
+			clz = &cl2;
+			clz = consulta_Fila(fi, clz);
+			insere_Pilha(pi[z], cl2);
+			remove_Fila(fi);
+			contador++;
+			if (contador == clientesPorCaixa){
+				z++;
+				contador=0;
+				if (z==caixas)
+					z = 0;
+			}
+			Cliente cl;
+			Cliente* pcl;
+			pcl = &cl;
+			scanf ("%d %d %d", pcl->codigo, pcl->operacao, pcl->operacaobanco);
+			insere_Fila(fi, cl);*/
+		}
+	}
+	
+	for (int k=0; k < capacidade; k++){   // Passa o resto dos elementos da fila para as pilhas.
+								// Isso tudo funciona?
+		Cliente cl;
+		Cliente* clk;
+		clk = &cl;
+		clk = consulta_Fila(fi, clk);
+		remove_Fila(fi);
+		contador++;
+			if (contador == clientesPorCaixa){
+				z++;
+				contador=0;
+				if (z==caixas)
+					z = 0;
+			}
+	}		
+	
+	return 0;
+		
+}
+*/
